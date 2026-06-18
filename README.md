@@ -1,12 +1,12 @@
-# deploy-frontier-model
+# deploy-forward-model
 
-> End-to-end local deployment of frontier AI models — provide a URL, a model name, or even just a model family, and get a running, validated instance in a single session.
+> End-to-end local deployment of forward AI models — provide a URL, a model name, or even just a model family, and get a running, validated instance in a single session.
 
 ---
 
 ## Problem Statement
 
-Deploying a frontier model locally is a multi-stage engineering task that spans several domains:
+Deploying a forward model locally is a multi-stage engineering task that spans several domains:
 
 1. **Requirement analysis** — parse model cards and config files to extract hardware prerequisites (VRAM, RAM, disk), Python version constraints, and dependency trees.
 2. **Platform qualification** — cross-reference requirements against the host machine's GPU compute capability, available memory, and free storage.
@@ -25,7 +25,7 @@ The skill activates when the user's message contains any of the following intent
 
 | Language | Trigger phrases |
 |----------|----------------|
-| English | `deploy a frontier model`, `download a model`, `run a model locally`, `deploy a large language model`, `set up a model`, `install a model` |
+| English | `deploy a forward model`, `download a model`, `run a model locally`, `deploy a large language model`, `set up a model`, `install a model` |
 | Chinese | `部署前沿模型`, `下载模型`, `本地运行模型`, `安装模型`, `配置模型环境` |
 
 It also activates when a user directly provides a HuggingFace URL or mentions a model family/code name with deployment intent.
@@ -114,7 +114,7 @@ User Input (URL / name / family)
 
 ## Model Registry & Interactive Selection
 
-The skill ships with a curated registry of 260+ frontier models across 30+ families (`references/models.jsonl`). When the user provides a URL, the registry is bypassed. Otherwise:
+The skill ships with a curated registry of 260+ forward models across 30+ families (`references/models.jsonl`). When the user provides a URL, the registry is bypassed. Otherwise:
 
 ### Input → resolution path
 
